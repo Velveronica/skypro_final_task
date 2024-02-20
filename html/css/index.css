@@ -28,3 +28,6 @@
  ol {
 	 color: #008000
 }
+img-container {
+	display:flex;
+}
