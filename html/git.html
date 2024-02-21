@@ -16,17 +16,13 @@
         1. <b class="red" style="color:red">git init</b>
     </p>
     <p>
-        Эта команда используется для клонирования проекта как репозитория git.
+        Эта команда используется для инициализации проекта как репозитория git.
     </p>
     <p>
         <br>
     </p>
     <p>
-        2. <b class="red" style="color:red">git clone
-        <url>
-            <directory></directory>
-        </url>
-    </b>
+        2. <b class="red" style="color:red">git clone</b>
     </p>
     <p>
         Эта команда клонирует репозиторий в новую директорию.&nbsp;
@@ -42,17 +38,17 @@
         <code>git config --local user.email "<a href="mailto:your_email@example.com">your_email@example.com</a>"</code>
     </p>
     <p>
-        <code> &nbsp;git config --global user.name "Name"</code>
+        <code>git config --global user.name "Name"</code>
     </p>
     <p>
-        <code> &nbsp;git config --global user.email "<a href="mailto:your_email@example.com">your_email@example.com</a>"</code>
+        <code>git config --global user.email "<a href="mailto:your_email@example.com">your_email@example.com</a>"</code>
     </p>
     <br>
     <p>
         Если надо скопировать только файлы:
     </p>
     <p>
-        <code> git clone --depth=1 git://someserver/somerepo dirformynewrepo </code>
+        <code>git clone --depth=1 git://someserver/somerepo dirformynewrepo </code>
     </p>
     <code> </code>
     <p>
@@ -63,11 +59,7 @@
         <br>
     </p>
     <p>
-        3. <b class="red" style="color:red">git remote add
-        <repository>
-            <url></url>
-        </repository>
-    </b>
+        3. <b class="red" style="color:red">git remote add</b>
     </p>
     <p>
         Пример: <code>git remote add origin <a
@@ -147,6 +139,9 @@
         
     </p>
     <p>
+        Эта команда совершает коммит  — «закрепляет» промежуточные результаты;
+    </p>
+    <p>
         <code> git commit -m “Text message”</code>
     </p>
     <p>
@@ -171,16 +166,6 @@
         соответствующую локальной и связывает их.
     </p>
     <p>
-        <code>git push
-            <repository>
-                <branch></branch>
-            </repository>
-        </code>
-    </p>
-    <p>
-        
-    </p>
-    <p>
         Пример: <code>git push -u origin master</code>
     </p>
     <p>
@@ -192,11 +177,7 @@
     <br>
     <p>
     <p>
-        10. <b class="red" style="color:red">git fetch
-        <repository>
-            <branch></branch>
-        </repository>
-    </b>
+        10. <b class="red" style="color:red">git fetch</b>
     </p>
     <p>
         
@@ -209,7 +190,7 @@
     <br>   
     </p>
     <p>
-        11. <b class="red" style="color:blue">git pull&nbsp;</b>
+        11. <b class="red" style="color:red">git pull</b>
     </p>
     <p>
         Эта команда используется для извлечения только что полученной информации и ее загрузки в локальный репозиторий.
@@ -219,7 +200,7 @@
     <br>
     </p>
     <p>
-        12. <b class="red" style="color:blue"></b>git branch&nbsp;</b> 
+        12. <b class="red" style="color:red">git branch</b> 
     </p>
     <p>    
         Эта команда используется для создания, просмотра переименования и удаления ветки, на которой вы
@@ -242,7 +223,7 @@
     </p>
     <br>
     <p>
-        13. <b>git checkout</b>
+        13. <b class="red" style="color:red">git checkout</b>
     </p>
     <p>
         Пример: <code>git checkout master</code> или <code>git checkout develop</code>
@@ -257,7 +238,7 @@
     </p>
     <br>
     <p>
-        14. <b>git merge</b>
+        14. <b class="red" style="color:red">git merge</b>
     </p>
     <p>
         Эта команда используется для объединения двух веток. Для этого укажите ветку, которую вы хотите унаследовать
@@ -272,7 +253,7 @@
     </p>
     <br>
     <p>
-        15. <b>git merge — abort</b>
+        15. <b class="red" style="color:red">git merge — abort</b>
     </p>
     <p>
         Эта команда используется для отмены слияния.
@@ -302,7 +283,7 @@
     </p>
     <br>
     <p>
-        16. <b>git reset — hard HEAD</b>
+        16. <b class="red" style="color:red">git reset — hard HEAD</b>
     </p>
     <p>
         Эта команда удалит все изменения, внесенные вами в ваш локальный репозиторий, и обновит его до последней версии,
@@ -310,34 +291,29 @@
     </p>
     <br>
     <p>
-        17. <b>git reset HEAD^</b>
+        17. <b class="red" style="color:red">git reset HEAD&nbsp;</b>
     </p>
     <p>
   
     </p>
     <p>
-        HEAD – это указатель (то есть ссылка на один из коммитов), главное назначение которого - определять, в каком 
-        состоянии находится рабочая копия. На какой коммит указывает HEAD – в таком состоянии файлы и находятся в рабочей области
+        Эта команда перемещает текущую ветку назад на два коммита, эффективно удаляя два снапшота, которые мы только что 
+	создали, из истории проекта. Он отменяет случайное закоммичивание и сохраняет изменения
     </p>
     <br>
     <p>
-        18. <b>git diff</b>
-    </p>
-          Эта команда перемещает текущую ветку назад на два коммита, эффективно удаляя два снапшота, которые мы только что
-        создали, из истории проекта. Он отменяет случайное закоммичивание и сохраняет изменения.
+        18. <b class="red" style="color:red">git diff</b>
     <p>
-        <code> git diff
-            <file></file>
-        </code> — частое использование&nbsp;
+        <code>git diff — частое использование</code>
     </p>
+    </p>
+         Эта команда используется сравнения изменений.
     <p>
-        Эта команда используется сравнения изменений.
-    </p>
     <p>
         <br>
     </p>
     <p>
-        19. <b>git rebase</b>
+        19. <b class="red" style="color:red">git rebase</b>
     </p>
     <p>
         <code>git rebase -i HEAD~N</code>
@@ -348,7 +324,7 @@
     </p>
     <br>
     <p>
-        20. <b>git stash</b>
+        20. <b class="red" style="color:red">git stash</b>
     </p>
     <p>
      

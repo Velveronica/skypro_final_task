@@ -29,5 +29,5 @@
 	 color: #008000
 }
 img-container {
-	display:flex;
+	display: flex-start;
 }
